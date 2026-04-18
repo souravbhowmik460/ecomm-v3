@@ -10,7 +10,7 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <a href="{{ route('home') }}" class="footer-logo">
-            <img src="{{ siteLogo() }}" alt="log0" title="logo" />
+            <img src="{{ siteLogo() }}" alt="log0" title="logo" style="width: 60%" />
           </a>
         </div>
         <div class="col-lg-6">
@@ -21,7 +21,7 @@
             @foreach ($pages as $slug => $page)
               <li><a href="{{ url($slug) }}" title="{{ $page->title }}">{{ $page->title }}</a></li>
             @endforeach
-            <li><a href="#">FAQ’s</a></li>
+            {{-- <li><a href="">FAQ’s</a></li> --}}
             {{-- <li><a href="{{ url('blogs') }}" title="Blogs">Blogs</a></li> --}}
             {{-- <li><a href="#">About Us</a></li>
             <li><a href="#">FAQ’s</a></li>
@@ -135,8 +135,7 @@
               @endif
             </span>
             <span class="font18 d-flex gap-4"> <span>© Copyright {{ $siteSettings['sitename'] ?? 'Mayuri' }}</span>
-              <span>Built by <a href="https://sundewsolutions.com/" target="_blank"
-                  title="Sundew">Sundew</a></span></span>
+              {{-- <span>Built by <a href="#" target="_blank" title="Mayuri">Mayuri</a></span></span> --}}
           </div>
         </div>
       </div>

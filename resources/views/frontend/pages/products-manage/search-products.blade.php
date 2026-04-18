@@ -11,8 +11,7 @@
     <div class="container-fluid p-0">
       <div class="row">
         <div class="col-lg-12">
-          <figure class="m-0"><img src="{{ asset('public/frontend/assets/img/home/search_banner.jpg') }}"
-              alt="" />
+          <figure class="m-0"><img src="{{ asset('public/frontend/assets/img/home/search.png') }}" alt="" />
           </figure>
         </div>
       </div>

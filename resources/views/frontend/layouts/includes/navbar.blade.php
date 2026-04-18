@@ -5,9 +5,9 @@
         <nav class="navbar navbar-expand-xl navbar-light">
           <div class="container-fluid p-0">
 
-            <a href="{{ route('home') }}" title="{{ $siteSettings['sitename'] ?? 'Sundew Ecomm' }}" class="mobilelogo"
+            <a href="{{ route('home') }}" title="{{ $siteSettings['sitename'] ?? 'Neuwrld' }}" class="mobilelogo"
               id="ham-menu">
-              <img src="{{ siteLogo() }}" alt="{{ $siteSettings['sitename'] ?? 'Sundew Ecomm' }}" />
+              <img src="{{ siteLogo() }}" alt="{{ $siteSettings['sitename'] ?? 'Neuwrld' }}" />
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">

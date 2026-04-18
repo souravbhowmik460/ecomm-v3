@@ -55,7 +55,7 @@ class ProductCategorySeeder extends Seeder
             'parent_id' => $childCategory->id,
             'sequence' => $g + 1,
             'tax' => rand(0, 20),
-            'category_image' => rand(7, 20) . '.webp'
+            'category_image' => null
           ]);
         }
       }

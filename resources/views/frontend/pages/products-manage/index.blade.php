@@ -1,5 +1,32 @@
 @extends('frontend.layouts.app')
+@push('styles')
+  {{-- <!-- Lightbox2 CSS --> --}}
 
+  <style>
+    /* .category_hero {
+        width: 100%;
+      }
+
+      .category_hero .container-fluid {
+        padding: 0;
+      }
+
+      .category_hero .row {
+        margin: 0;
+      }
+
+      .category_hero figure {
+        margin: 0;
+      } */
+
+    .category_hero img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+@endpush
 @section('title', @$title)
 @section('content')
   <main>
@@ -17,8 +44,10 @@
         <div class="row">
           <div class="col-lg-12">
             <figure class="m-0"><img
-                src="{{ !empty($settings['image']) ? asset(config('defaults.banner_image_path') . $settings['image']) : asset('public\SeederImages\Grocery\banners\g-product-hero.webp') }}"
-                alt="{{ $settings['alt_text'] ?? '' }}" />
+                src="{{ !empty($product->category->category_image)
+                    ? asset('/public/storage/uploads/categories/' . $product->category->category_image)
+                    : asset('public/backend/assetss/images/products/product_thumb.jpg') }}"
+                alt="" />
             </figure>
           </div>
         </div>

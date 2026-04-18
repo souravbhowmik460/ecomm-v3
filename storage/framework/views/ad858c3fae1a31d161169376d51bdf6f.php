@@ -5,9 +5,9 @@
         <nav class="navbar navbar-expand-xl navbar-light">
           <div class="container-fluid p-0">
 
-            <a href="<?php echo e(route('home')); ?>" title="<?php echo e($siteSettings['sitename'] ?? 'Sundew Ecomm'); ?>" class="mobilelogo"
+            <a href="<?php echo e(route('home')); ?>" title="<?php echo e($siteSettings['sitename'] ?? 'Neuwrld'); ?>" class="mobilelogo"
               id="ham-menu">
-              <img src="<?php echo e(siteLogo()); ?>" alt="<?php echo e($siteSettings['sitename'] ?? 'Sundew Ecomm'); ?>" />
+              <img src="<?php echo e(siteLogo()); ?>" alt="<?php echo e($siteSettings['sitename'] ?? 'Neuwrld'); ?>" />
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">

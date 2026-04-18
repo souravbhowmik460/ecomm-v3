@@ -10,7 +10,7 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <a href="<?php echo e(route('home')); ?>" class="footer-logo">
-            <img src="<?php echo e(siteLogo()); ?>" alt="log0" title="logo" />
+            <img src="<?php echo e(siteLogo()); ?>" alt="log0" title="logo" style="width: 60%" />
           </a>
         </div>
         <div class="col-lg-6">
@@ -19,7 +19,7 @@
             <?php $__currentLoopData = $pages; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $slug => $page): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
               <li><a href="<?php echo e(url($slug)); ?>" title="<?php echo e($page->title); ?>"><?php echo e($page->title); ?></a></li>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            <li><a href="#">FAQ’s</a></li>
+            
             
             
           </ul>
@@ -132,8 +132,7 @@
               <?php endif; ?>
             </span>
             <span class="font18 d-flex gap-4"> <span>© Copyright <?php echo e($siteSettings['sitename'] ?? 'Mayuri'); ?></span>
-              <span>Built by <a href="https://sundewsolutions.com/" target="_blank"
-                  title="Sundew">Sundew</a></span></span>
+              
           </div>
         </div>
       </div>

@@ -1,5 +1,32 @@
 @extends('frontend.layouts.app')
+@push('styles')
+  {{-- <!-- Lightbox2 CSS --> --}}
 
+  <style>
+    .category_hero {
+      width: 100%;
+    }
+
+    .category_hero .container-fluid {
+      padding: 0;
+    }
+
+    .category_hero .row {
+      margin: 0;
+    }
+
+    .category_hero figure {
+      margin: 0;
+    }
+
+    .category_hero img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+@endpush
 @section('title', @$title)
 @section('content')
   {{-- @include('frontend.includes.listing-banner') --}}
@@ -7,7 +34,7 @@
     pd($productListingBanner);
   @endphp --}}
   @php
-    //pd($category_slug);
+    //pd($category->slug);
     $settings = [];
     if (!empty($productListingBanner) && isset($productListingBanner->settings)) {
         $settings = json_decode($productListingBanner->settings, true);
@@ -19,16 +46,19 @@
     <div class="container-fluid p-0">
       <div class="row">
         <div class="col-lg-12">
-          @if ($category_slug == 'chicken')
-            <figure class="m-0"><img src="{{ asset('public\frontend\assets\img\home\chicken_old.png') }}"
-                alt="" />
-            </figure>
-          @else
+          {{-- @if (!empty($category->category_image)) --}}
+          <figure class="m-0"> <img
+              src="{{ !empty($category->category_image)
+                  ? asset('/public/storage/uploads/categories/' . $category->category_image)
+                  : asset('public/backend/assetss/images/products/product_thumb.jpg') }}"
+              alt="" />
+          </figure>
+          {{-- @else
             <figure class="m-0"><img
                 src="{{ !empty($settings['image']) ? asset(config('defaults.banner_image_path') . $settings['image']) : asset('public\SeederImages\Grocery\banners\g-product-hero.webp') }}"
                 alt="{{ $settings['alt_text'] ?? '' }}" />
             </figure>
-          @endif
+          @endif --}}
         </div>
       </div>
     </div>

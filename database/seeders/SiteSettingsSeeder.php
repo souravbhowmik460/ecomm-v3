@@ -10,8 +10,8 @@ class SiteSettingsSeeder extends Seeder
   public function run()
   {
     $settings = [
-      ['id' => 1, 'key' => 'siteurl', 'value' => 'https://sundew.com/server', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-04-08 23:17:38', 'deleted_at' => null],
-      ['id' => 2, 'key' => 'sitename', 'value' => 'Sundew Ecomm', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-04-08 23:19:20', 'deleted_at' => null],
+      ['id' => 1, 'key' => 'siteurl', 'value' => '', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-04-08 23:17:38', 'deleted_at' => null],
+      ['id' => 2, 'key' => 'sitename', 'value' => 'NeuWrld', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-04-08 23:19:20', 'deleted_at' => null],
       ['id' => 3, 'key' => 'site_email', 'value' => 'akd@a.com', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-04-08 23:14:05', 'deleted_at' => null],
       ['id' => 4, 'key' => 'site_primary_phone', 'value' => '+911234567890', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-04-09 01:37:07', 'deleted_at' => null],
       ['id' => 5, 'key' => 'site_secondary_phone', 'value' => '+917899999745', 'status' => 1, 'created_by' => 1, 'updated_by' => 1, 'deleted_by' => null, 'created_at' => '2025-04-08 23:14:05', 'updated_at' => '2025-05-08 23:56:57', 'deleted_at' => null],
