@@ -7,7 +7,7 @@
   <?php echo $__env->yieldPushContent('component-styles'); ?>
   <?php echo $__env->yieldPushContent('styles'); ?>
 
-  <title><?php echo $__env->yieldContent('title', 'E-Commerce'); ?> | Mayuri</title>
+  <title><?php echo $__env->yieldContent('title', 'E-Commerce'); ?> | Neuwrld</title>
 
   <style>
     .error {

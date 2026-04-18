@@ -7,7 +7,7 @@
   @stack('component-styles')
   @stack('styles')
 
-  <title>@yield('title', 'E-Commerce') | Mayuri</title>
+  <title>@yield('title', 'E-Commerce') | Neuwrld</title>
 
   <style>
     .error {
